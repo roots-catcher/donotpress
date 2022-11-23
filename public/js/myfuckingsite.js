@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log('Hello, I See You!');
+
     const openpage = document.querySelector('.openpage'),
           dangerBtn = openpage.querySelector('button.danger'),
           dude = openpage.querySelector('.dude'),
@@ -17,10 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     dangerBtn.style.fontSize = "55px";
                     i++;
                     break;
+
                 case 1:          
                     dangerBtn.innerHTML = 'НЕ<br> ЖМИ<br> СЮДА!';
                     i++;
                     break;
+
                 case 2:
                     let answer = prompt("Ты идиот?", "Да/Нет").toLowerCase();
                     if (answer == "да") {
@@ -44,12 +47,13 @@ document.addEventListener("DOMContentLoaded", () => {
                         i++;
                     }
                     break;
+
                 case 3:
                     dangerBtn.classList.remove('active');
                     blackmaster.classList.add('active');
                     document.querySelector('body').classList.add('master');
                     setTimeout((text)=> {
-                        location.href = "https://vk.com/video/@insta_boyz?z=video-177628471_456239081%2Fclub102027094%2Fpl_-102027094_-2";
+                        location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=5s&ab_channel=RickAstley";
                     }, 5000);
             }
         console.log(i);
@@ -64,7 +68,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         dude.classList.remove('active');
         document.querySelector('body').classList.remove('bomb');
-
     });
     
 });
