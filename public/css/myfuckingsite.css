@@ -27,10 +27,25 @@
   margin-top: 210px;
   margin-left: 35%;
 }
+.openpage .mrblack {
+  display: none;
+}
+.openpage .mrblack.active {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  margin-top: 210px;
+  margin-left: 35%;
+}
 
 body.bomb {
   background-image: url("../img/bomb.gif");
   background-color: red;
+}
+body.master {
+  background-image: url("../img/gach.gif");
+  background-color: #3372e8;
 }
 
 /*# sourceMappingURL=myfuckingsite.css.map */

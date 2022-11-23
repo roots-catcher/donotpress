@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log('Hello, I See You!');
     const openpage = document.querySelector('.openpage'),
           dangerBtn = openpage.querySelector('button.danger'),
-          dude = openpage.querySelector('.dude');
+          dude = openpage.querySelector('.dude'),
+          blackmaster = openpage.querySelector('.mrblack');
 
     let i = 0;
 
@@ -27,6 +28,9 @@ document.addEventListener("DOMContentLoaded", () => {
                         dangerBtn.classList.remove('active');
                         dude.classList.add('active');
                         document.querySelector('body').classList.add('bomb');
+                        setTimeout((text)=> {
+                            location.reload();
+                        }, 5000);
                         break;
                     } else if (answer == "нет") {
                         alert("ТОГДА НЕ ТРОГАЙ КНОПКУ!!!");
@@ -39,15 +43,14 @@ document.addEventListener("DOMContentLoaded", () => {
                         alert("Не попал");
                         i++;
                     }
-                    console.log(answer);
                     break;
                 case 3:
                     dangerBtn.classList.remove('active');
-                    dude.classList.add('active');
-                    document.querySelector('body').classList.add('bomb');
-                    break;
-
-                    //location.reload();
+                    blackmaster.classList.add('active');
+                    document.querySelector('body').classList.add('master');
+                    setTimeout((text)=> {
+                        location.href = "https://vk.com/video/@insta_boyz?z=video-177628471_456239081%2Fclub102027094%2Fpl_-102027094_-2";
+                    }, 5000);
             }
         console.log(i);
             
