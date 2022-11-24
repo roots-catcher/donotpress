@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     dangerBtn.classList.remove('active');
                     blackmaster.classList.add('active');
                     document.querySelector('body').classList.add('master');
+                    
                     setTimeout((text)=> {
                         location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=5s&ab_channel=RickAstley";
                     }, 5000);
